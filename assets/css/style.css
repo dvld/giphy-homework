@@ -1,0 +1,30 @@
+button, #add-game {
+  display: inline-block;
+  color : snow;
+  border-radius : 10px;
+  font-size : 14px;
+  padding : 10px 16px;
+  margin: 2px;
+  font-weight: bold;
+  background-color: seagreen;
+  border: 2px solid lightgreen;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+button:hover, #add-game:hover {
+  background-color: snow;
+  color: seagreen;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+}
+
+form {
+  font-size: 24px;
+  font-weight: bolder;
+}

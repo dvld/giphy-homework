@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var videoGames = [
-    "The Legend of Zelda", "Super Mario", "Sonic The Hedgehog", "Halo", "Fallout", "Elder Scrolls", "World of Warcraft", "Grand Theft Auto", "Final Fantasy", "God of War", "Metal Gear Solid", "Bioshock", "Pokemon"
+    "The Legend of Zelda", "Super Mario", "Sonic The Hedgehog", "Halo 2", "Fallout", "Elder Scrolls", "World of Warcraft", "Grand Theft Auto", "Final Fantasy", "God of War", "Metal Gear Solid", "Bioshock", "Pokemon"
   ];
 
   // generate buttons
@@ -22,8 +22,8 @@ $(document).ready(function() {
   }
 
   $(document).on("click", ".game-button", function() {
-
-    $("video-game-gifs").empty();
+    // console.log("test");
+    $("#video-game-gifs").empty();
     $(".game-button").removeClass("active");
     $(this).addClass("active");
 
@@ -86,12 +86,12 @@ $(document).ready(function() {
   });
 
   $("#add-game").on("click", function(event) {
-
+    console.log("test");
     event.preventDefault();
 
     var newGame = $("input").eq(0).val();
 
-    if (newGame.lenngth > 2) {
+    if (newGame.length > 2) {
 
       videoGames.push(newGame);
 
